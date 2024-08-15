@@ -2,19 +2,17 @@ package espr;
 
 public class Mesa {
 	String cor;
-	float tamanho;
 	String modelo;
-	float peso;
-	
-	void sustentar() {
-		
-	}
+	String material;
+	float preco;
+	int largura;
+	int comprimento;
 	
 	void apoiar() {
 		
 	}
 	
-	void posicionar() {
+	void calcular() {
 		
 	}
 }

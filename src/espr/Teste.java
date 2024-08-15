@@ -16,13 +16,16 @@ public class Teste {
 		aluno.conversar();
 		
 		Aluno joao = new Aluno();
-		aluno.nome = "Joao Pedro";
-		aluno.tamanho = 1.79f;
-		aluno.cor = "branco";
-		aluno.documento = "999999";
-		aluno.estudar();
-		aluno.jogar();
-		aluno.conversar();
+		joao.nome = "Joao Pedro";
+		joao.tamanho = 1.79f;
+		joao.cor = "branco";
+		joao.documento = "999999";
+		joao.estudar();
+		joao.jogar();
+		joao.conversar();
+		Mesa mesa = joao.constroirMesa();
+		mesa.cor = "Branca";
+		
 		
 		System.out.println("Finalizando");
 	}
