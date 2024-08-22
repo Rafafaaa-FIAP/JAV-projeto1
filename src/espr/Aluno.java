@@ -19,6 +19,10 @@ public class Aluno {
 		
 	}
 	
+	void imprimirFormatado() {
+		System.out.printf("O aluno %s do documento %s tem o tamanho %1.2f e cor %s%n", nome, documento, tamanho, cor);
+	}
+	
 	void jogar() {
 		
 		System.out.println("O aluno " + nome + " está jogando");

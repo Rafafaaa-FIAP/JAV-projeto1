@@ -1,5 +1,7 @@
 package espr;
 
+import java.util.Scanner;
+
 public class Teste {
 	
 	public static void main(String[] args) {
@@ -7,24 +9,32 @@ public class Teste {
 		System.out.println("Iniciando por aqui...");
 		
 		Aluno aluno = new Aluno();
-		aluno.nome = "Rafael";
-		aluno.tamanho = 1.73f;
-		aluno.cor = "branco";
-		aluno.documento = "999999";
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Digite o nome do aluno: ");
+		aluno.nome = entrada.next();
+		
+		System.out.print("Digite o tamanho do aluno: ");
+		aluno.tamanho = entrada.nextFloat();
+		
+		System.out.print("Digite a cor do aluno: ");
+		aluno.cor = entrada.next();
+		
+		System.out.print("Digite a documento do aluno: ");
+		aluno.documento = entrada.next();
+		
 		aluno.estudar();
 		aluno.jogar();
 		aluno.conversar();
 		
-		Aluno joao = new Aluno();
-		joao.nome = "Joao Pedro";
-		joao.tamanho = 1.79f;
-		joao.cor = "branco";
-		joao.documento = "999999";
-		joao.estudar();
-		joao.jogar();
-		joao.conversar();
-		Mesa mesa = joao.constroirMesa();
-		mesa.cor = "Branca";
+		Mesa mesa = aluno.constroirMesa();
+		System.out.print("Digite a cor da mesa: ");
+		mesa.cor = entrada.next();
+		
+		aluno.imprimirFormatado();
+		
+		entrada.close();
 		
 		
 		System.out.println("Finalizando");
