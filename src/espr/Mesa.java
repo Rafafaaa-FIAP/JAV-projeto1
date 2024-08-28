@@ -12,7 +12,7 @@ public class Mesa {
 		
 	}
 	
-	void calcular() {
-		
+	int calcularArea() {
+		return (largura * comprimento);
 	}
 }

@@ -8,9 +8,11 @@ public class Teste {
 		
 		System.out.println("Iniciando por aqui...");
 		
-		Aluno aluno = new Aluno();
-		
 		Scanner entrada = new Scanner(System.in);
+		
+		
+		
+		/*Aluno aluno = new Aluno();
 		
 		System.out.print("Digite o nome do aluno: ");
 		aluno.nome = entrada.next();
@@ -25,17 +27,27 @@ public class Teste {
 		aluno.documento = entrada.next();
 		
 		aluno.estudar();
-		aluno.jogar();
 		aluno.conversar();
-		
-		Mesa mesa = aluno.constroirMesa();
-		System.out.print("Digite a cor da mesa: ");
-		mesa.cor = entrada.next();
-		
+		aluno.jogar();
 		aluno.imprimirFormatado();
+		aluno.conversarGeraArquivo();
+		
+		String retorno = aluno.retornarAlunoFormatado();
+		System.out.println(retorno);
+		
+		Mesa mesa = aluno.construirMesa();
+		System.out.print("Digite a cor da mesa: ");
+		mesa.cor = entrada.next();*/
+		
+		
+		
+		String cadeira = new String("vermelha");
+		String cadeira2 = new String("vermelha");
+		System.out.println("Comparaçao com equals: " + cadeira.equals(cadeira2));
+		System.out.println("Comparaçao com equalsIgnoreCase: " + cadeira.equalsIgnoreCase(cadeira2));
+		System.out.println("Comparacao com ==: " + (cadeira == cadeira2));
 		
 		entrada.close();
-		
 		
 		System.out.println("Finalizando");
 	}
