@@ -1,6 +1,6 @@
 package espr;
 
-public class TesteCalculadora {
+public class CalculadoraTeste {
 
 	public static void main(String[] args) {
 		
